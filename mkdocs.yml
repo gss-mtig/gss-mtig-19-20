@@ -1,5 +1,5 @@
 site_name: Geoservicios para Smart Cities
-site_url: https://gss-mtig.github.io/gss-mtig-18-19/
+site_url: https://gss-mtig.github.io/gss-mtig-19-20/
 site_description: Geoservicios para Smart Cities.
 site_author: gss-mtig
 theme:
@@ -14,7 +14,7 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.superfences
   - footnotes
-repo_url: "https://github.com/gss-mtig/gss-mtig-18-19"
+repo_url: "https://github.com/gss-mtig/gss-mtig-19-20"
 
 nav:
 - Home: index.md
@@ -24,17 +24,18 @@ nav:
 - 4. Visualización con Kepler.gl: 4_visualizacion_kepler.md
 - 5. Herramientas de visualización de datos: 5_herramientas_visualizacion_datos.md
 - 6. Conceptos básicos de Geoservicios: 6_conceptos_geoservicios.md
-- 7. Consideraciones sobre servicios Open data: 7_consideraciones_servicios_opendata.md
-- 8. Ejemplo servicio bicing Barcelona: 8_ejemplo_servicio_bicing_bcn.md
-- 9. Ejemplo servicio bicing Barcelona (VectorTiles): 9_ejemplo_servicio_bicing_bcn_vt.md
-- 10. Consideraciones sobre servicios de Sensores: 10_consideraciones_servicios_realtime_sensores.md
-- 11. Ejemplo sensores port Barcelona: 11_ejemplo_sensores_port_bcn.md
-- 12. Ejemplo Sentilo ACA: 12_ejemplo_sentilo_aca.md
-- 13. Geoservicios realtime: 13_geoservicios_realtime.md
-- 14. Herramientas de visualización geoservicios: 14_herramientas_visualizacion_geoservicios.md
-- 15. Ejemplo Mobility: 15_ejemplo_mobility.md
-- 16. Ejemplo servicio realtime para compartir la ubicación: 16_ejemplo_geoservicio_realtime.md
-- 17. Ejemplo GTFS: 17_ejemplo_gtfs.md
+- 7. Ejemplo servicio WMS: 7_ejemplo_servicio_wms.md
+- 8. Consideraciones sobre servicios Open data: 8_consideraciones_servicios_opendata.md
+- 9. Ejemplo servicio bicing Barcelona: 9_ejemplo_servicio_bicing_bcn.md
+- 10. Ejemplo servicio bicing Barcelona (VectorTiles): 10_ejemplo_servicio_bicing_bcn_vt.md
+- 11. Consideraciones sobre servicios de Sensores: 11_consideraciones_servicios_realtime_sensores.md
+- 12. Ejemplo sensores port Barcelona: 12_ejemplo_sensores_port_bcn.md
+- 13. Ejemplo Sentilo ACA: 13_ejemplo_sentilo_aca.md
+- 14. Geoservicios realtime: 14_geoservicios_realtime.md
+- 15. Herramientas de visualización geoservicios: 15_herramientas_visualizacion_geoservicios.md
+- 16. Ejemplo Mobility: 16_ejemplo_mobility.md
+- 17. Ejemplo servicio realtime para compartir la ubicación: 17_ejemplo_geoservicio_realtime.md
+- 18. Ejemplo GTFS: 18_ejemplo_gtfs.md
 
 plugins:
     - search

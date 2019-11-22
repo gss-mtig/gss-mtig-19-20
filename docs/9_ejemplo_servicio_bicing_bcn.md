@@ -2,14 +2,14 @@
 
 ## Acceso al servicio de datos del Bicing de Barcelona
 
-En el portal Open data del Ayuntamiento de Barcelona podemos encontrar un dataset (conjunto de datos) que contiene las [estaciones del servicio de Bicing](http://opendata-ajuntament.barcelona.cat/data/es/dataset/bicing)
+En el portal Open data del Ayuntamiento de Barcelona podemos encontrar un dataset (conjunto de datos) que contiene las [estaciones del servicio de Bicing](https://opendata-ajuntament.barcelona.cat/data/es/dataset/informacio-estacions-bicing)
 
 Si bien el Ayuntamiento de Barcelona no ofrece explicitamente el acceso a los datos del Bicing como un servicio, si que tiene un servicio de datos en tiempo real. La url la podemos encontrar presionando el botón de Descargar del recurso bicing.json
 
 ![url servicio de bicing](img/bicing.png)
 *url servicio de bicing*
 
-Al abrir la url http://wservice.viabicing.cat/v2/stations en nuestro navegador observaremos que la respuesta es un archivo json con un conjunto de elementos que tienen las coordenadas de la localización de la estación de bicing, la disponibilidad de bicis, las estaciones más cercanas, etc.
+Al abrir la url https://api.bsmsa.eu/ext/api/bsm/gbfs/v2/en/station_status en nuestro navegador observaremos que la respuesta es un archivo json con un conjunto de elementos que tienen las coordenadas de la localización de la estación de bicing, la disponibilidad de bicis, las estaciones más cercanas, etc.
 
 Mapa que utiliza este servicio, [Ejemplo creado en la plataforma Instamaps](https://www.instamaps.cat/instavisor/1611695/dc769e48513f5df888691d2048005934/Estacions_bicing_i_carrils_bici_a_BCN_.html?3D=false#14/41.3962/2.1714)
 
@@ -19,7 +19,7 @@ Para ver estos datos sobre un mapa crearemos un visor utilizando Leaflet. [^2]
 
 ## Creación de un visor
 
-- Crer una carpeta con el nombre de *visor-bicing*.
+- Crear una carpeta con el nombre de *visor-bicing*.
 - Crear un archivo con el nombre de *index.html* dentro de la carpeta
 - Abrir el archivo index.html con un editor de texto y copiar el siguiente código.
 
@@ -124,7 +124,7 @@ Para ver estos datos sobre un mapa crearemos un visor utilizando Leaflet. [^2]
     }).addTo(map);
 
     var realtime = L.realtime({
-      url: 'http://wservice.viabicing.cat/v2/stations',
+      url: 'https://api.bsmsa.eu/ext/api/bsm/gbfs/v2/en/station_information',
       crossOrigin: true,
       type: 'json'
     }, {
