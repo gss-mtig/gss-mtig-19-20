@@ -69,8 +69,8 @@ http://demo.ckan.org/api/3/action/resource_search?
       <label for="url_ckan">Url:</label>
 
       <select id="url_ckan">
-        <option value="http://demo.ckan.org/api/3/action/resource_search?">ckan.org</option>
-        <option value="http://old.datahub.io/api/3/action/resource_search?">old.datahub.io</option>
+        <option value="https://demo.ckan.org/api/3/action/resource_search?">ckan.org</option>
+        <option value="https://old.datahub.io/api/3/action/resource_search?">old.datahub.io</option>
 				<!-- añadimos BCN opendata -->
       </select>
     </div>
