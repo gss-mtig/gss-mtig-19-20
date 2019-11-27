@@ -22,7 +22,6 @@ Temario:
 * [Ejemplo servicio bicing Barcelona](https://gss-mtig.github.io/gss-mtig-19-20/9_ejemplo_servicio_bicing_bcn/)
 * [Ejemplo servicio bicing Barcelona (VectorTiles)](https://gss-mtig.github.io/gss-mtig-19-20/10_ejemplo_servicio_bicing_bcn_vt/)
 * [Consideraciones sobre servicios de Sensores](https://gss-mtig.github.io/gss-mtig-19-20/11_consideraciones_servicios_realtime_sensores/)
-* [Ejemplo sensores port Barcelona](https://gss-mtig.github.io/gss-mtig-19-20/12_ejemplo_sensores_port_bcn/)
 * [Ejemplo Sentilo ACA](https://gss-mtig.github.io/gss-mtig-19-20/13_ejemplo_sentilo_aca/)
 * [Geoservicios realtime](https://gss-mtig.github.io/gss-mtig-19-20/14_geoservicios_realtime/)
 * [Herramientas de visualización geoservicios](https://gss-mtig.github.io/gss-mtig-19-20/15_herramientas_visualizacion_geoservicios/)
