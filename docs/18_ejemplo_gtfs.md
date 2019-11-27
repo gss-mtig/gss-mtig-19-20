@@ -22,7 +22,7 @@ Para crear un visor de mapas utilizaremos la librería de mapas Leaflet [^2]. Y 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo GTFS</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -37,7 +37,7 @@ Para crear un visor de mapas utilizaremos la librería de mapas Leaflet [^2]. Y 
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script>
 		var map = L.map('map');
 
@@ -71,11 +71,11 @@ Para crear un visor de mapas utilizaremos la librería de mapas Leaflet [^2]. Y 
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"assert": "^1.4.1",
-		"express": "^4.16.2",
-		"fast-csv": "^2.4.1",
-		"request": "^2.83.0",
-		"yauzl": "^2.9.1"
+		"assert": "^2.0.0",
+		"express": "^4.17.1",
+		"fast-csv": "^3.4.0",
+		"request": "^2.88.0",
+		"yauzl": "^2.10.0"
 	}
 }
 ```
@@ -437,7 +437,7 @@ function leerZip(archivo){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo GTFS</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -452,7 +452,7 @@ function leerZip(archivo){
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script>
 		var map = L.map('map');
@@ -478,7 +478,7 @@ function leerZip(archivo){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo GTFS</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -493,7 +493,7 @@ function leerZip(archivo){
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script>
 		var map = L.map('map');
@@ -536,7 +536,7 @@ function leerZip(archivo){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo GTFS</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -551,7 +551,7 @@ function leerZip(archivo){
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script>
 		var map = L.map('map');
@@ -598,7 +598,7 @@ function leerZip(archivo){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo GTFS</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -613,9 +613,9 @@ function leerZip(archivo){
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.5/chroma.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.6/chroma.min.js"></script>
 	<script>
 		var map = L.map('map');
 
@@ -659,7 +659,7 @@ function leerZip(archivo){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo GTFS</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -674,9 +674,9 @@ function leerZip(archivo){
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.5/chroma.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.6/chroma.min.js"></script>
 	<script>
 		var map = L.map('map');
 

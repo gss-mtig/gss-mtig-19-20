@@ -15,7 +15,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -30,7 +30,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script>
 		var map = L.map('map');
 
@@ -91,7 +91,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 - Cargar la respuesta del servicio utilizando el plugin de Leaflet llamado *leaflet.reachability* [^2]. Este plugin permite hacer una llamada al servicio de Openrouteservice y cargar la respuesta en un mapa. Modificar el archivo index.html para cargar el plugin en nuestra aplicación. 
 
-```html hl_lines="9 25 26 27 28"
+```html hl_lines="9 26"
 <!DOCTYPE html>
 <html>
 <head>
@@ -99,8 +99,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -116,10 +116,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -139,7 +137,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 - Agregar el control de Isócronas al mapa utilizando el plugin.
 
-```html hl_lines="41 42 43 44 45"
+```html hl_lines="39 40 41 42 43"
 <!DOCTYPE html>
 <html>
 <head>
@@ -147,8 +145,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -164,10 +162,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -195,7 +191,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 - Modificar la aplicación para que se haga el cálculo de la Isócrona cuando el usuario haga click en un punto del mapa sin utilizar el plugin. Para ello primero hay que detectar el evento click en el mapa.
 
-```html hl_lines="47 48 49"
+```html hl_lines="45 46 47"
 <!DOCTYPE html>
 <html>
 <head>
@@ -203,8 +199,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -220,10 +216,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -255,7 +249,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 - Crear una función que tenga como parámetro una posición (coordenada lat lon) y genere una url de llamada al servicio de isócronas de Openrouteservice para que haga el cálculo en la coordenada indicada. Copiar lo siguiente al final de nuestro código
 
-```html hl_lines="51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69"
+```html hl_lines="49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67"
 <!DOCTYPE html>
 <html>
 <head>
@@ -263,8 +257,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -280,10 +274,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -332,7 +324,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 - Llamar a la función *crearUrlIsochrona* cuando se hace click en el mapa. Escribir al final de la función del click
 
-```html hl_lines="49 50"
+```html hl_lines="47 48"
 <!DOCTYPE html>
 <html>
 <head>
@@ -340,8 +332,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -357,10 +349,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -421,8 +411,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -438,11 +428,9 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -492,7 +480,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 ```
 - Agregar la capa geojsonLayer para que se inicialice vacía sin ningún elemento. 
 
-```html hl_lines="48"
+```html hl_lines="46"
 <!DOCTYPE html>
 <html>
 <head>
@@ -500,8 +488,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -517,11 +505,9 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -574,7 +560,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 - Utilizar el método refresh para actualizar la capa geojsonLayer con la url generada al hacer click.
 
-```html hl_lines="54"
+```html hl_lines="52"
 <!DOCTYPE html>
 <html>
 <head>
@@ -582,8 +568,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -599,11 +585,9 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -659,7 +643,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 - Pintar la línea del color que indicamos. Por defecto se pinta la línea de color azul. Esto es debido a que el Leaflet no sabe de que color pintar la línea y utiliza el color por defecto. En la respuesta del servicio podemos ver que los elementos que nos retorna tienen unas propiedades (properties) en donde se listan una serie de atributos, uno de ellos es el *value* que corresponde con el valor del intervalo de tiempo. Lo que debemos hacer es decirle al leaflet que utilice esa propiedad para dar el color a la línea. Escribir lo siguiente en nuestra capa geojsonLayer.
 
-```html hl_lines="48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70"
+```html hl_lines="46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68"
 <!DOCTYPE html>
 <html>
 <head>
@@ -667,8 +651,8 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 
 	<style>
 		#map {
@@ -684,11 +668,9 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -778,8 +760,8 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 	<link rel="stylesheet" href="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/css/L.Control.OpenCageSearch.dev.css" />
 	<style>
 		#map {
@@ -795,12 +777,10 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script src="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/js/L.Control.OpenCageSearch.dev.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -876,7 +856,7 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 - Crear la variable para la API key
 
-```html hl_lines="34"
+```html hl_lines="32"
 <!DOCTYPE html>
 <html>
 <head>
@@ -884,8 +864,8 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 	<link rel="stylesheet" href="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/css/L.Control.OpenCageSearch.dev.css" />
 	<style>
 		#map {
@@ -901,12 +881,10 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script src="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/js/L.Control.OpenCageSearch.dev.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -983,7 +961,7 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 - Agregar el control al mapa. Para utilizar el servicio de búsqueda también es necesario pasar nuestra API key:
 
-```html hl_lines="50 51 52 53 54"
+```html hl_lines="48 49 50 51 52"
 <!DOCTYPE html>
 <html>
 <head>
@@ -991,8 +969,8 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 	<link rel="stylesheet" href="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/css/L.Control.OpenCageSearch.dev.css" />
 	<style>
 		#map {
@@ -1008,12 +986,10 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script src="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/js/L.Control.OpenCageSearch.dev.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -1028,7 +1004,7 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 		}).addTo(map);
 
 		// Initialise the reachability plugin
-    L.control.reachability({
+    	L.control.reachability({
 			// add settings/options here
 			apiKey: API_KEY_ORS
 		}).addTo(map);
@@ -1098,7 +1074,7 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 - Calcular las isócronas al seleccionar un resultado de la búsqueda. Modificar la función *_geocodeResultSelected* del control geocoder
 
-```html hl_lines="55 56 57 58 59 60"
+```html hl_lines="53 54 55 56 57 58"
 <!DOCTYPE html>
 <html>
 <head>
@@ -1106,8 +1082,8 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 	<link rel="stylesheet" href="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/css/L.Control.OpenCageSearch.dev.css" />
 	<style>
 		#map {
@@ -1123,12 +1099,10 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script src="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/js/L.Control.OpenCageSearch.dev.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
@@ -1143,7 +1117,7 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 		}).addTo(map);
 
 		// Initialise the reachability plugin
-    L.control.reachability({
+    	L.control.reachability({
 			// add settings/options here
 			apiKey: API_KEY_ORS
 		}).addTo(map);
@@ -1219,7 +1193,7 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 - Llamar a nuestra función *crearUrlIsochrona* en la función del evento select para generar la url, luego refrescar la capa de *geojsonLayer*. Esto ya lo hemos hecho cuando el usuario hace click en el mapa. Copiar lo siguiente en la función
 
-```html hl_lines="60 61"
+```html hl_lines="58 59"
 <!DOCTYPE html>
 <html>
 <head>
@@ -1227,8 +1201,8 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.css"/>
 	<link rel="stylesheet" href="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/css/L.Control.OpenCageSearch.dev.css" />
 	<style>
 		#map {
@@ -1244,12 +1218,10 @@ Para agregar un buscador utilizaremos el plugin de Leaflet *Leaflet.OpenCage.Sea
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.js"></script>
 	<script src="http://rawgit.com/opencagedata/leaflet-opencage-search/master/dist/js/L.Control.OpenCageSearch.dev.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/leaflet.reachability.js"></script>
-<!-- Include below if you don't have your own preferred AJAX function/method (see options below) -->
-<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v1.0.0/simple_ajax_request.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/trafforddatalab/leaflet.reachability@v2.0.0/leaflet.reachability.js"></script>
 
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';

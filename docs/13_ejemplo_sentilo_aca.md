@@ -26,7 +26,7 @@ Para crear un visor de mapas utilizaremos la librería de mapas Leaflet [^5].
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ejemplo Sentilo ACA</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
   <style>
     #map {
         height: 100%;
@@ -39,7 +39,7 @@ Para crear un visor de mapas utilizaremos la librería de mapas Leaflet [^5].
 
   <div id="map"></div>
 
-  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   <script>
     var map = L.map('map');
 
@@ -141,7 +141,7 @@ Para crear un visor de mapas utilizaremos la librería de mapas Leaflet [^5].
 
 ## Creación del proxy
 
-- Instalar Node.js [^9]. Descargar la última versión LTS (en este momento es la 10.13.0 LTS) y lo instalaremos con las opciones por defecto. Abrir la consola para verificar que se ha instalado correctamente y escribir
+- Instalar Node.js [^9]. Descargar la última versión LTS (en este momento es la 12.13.1 LTS) y lo instalaremos con las opciones por defecto. Abrir la consola para verificar que se ha instalado correctamente y escribir
 
 ```bash
 node -v
