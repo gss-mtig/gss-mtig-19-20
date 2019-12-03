@@ -58,7 +58,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ejemplo Isócronas Mapzen</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<style>
 		#map {
 			height: 100%;
@@ -73,7 +73,7 @@ Algunos de los servicios que ofrecen el cálculo de Isócronas son: [Targomo](ht
 
 	</div>
 
-	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script>
 		var API_KEY_ORS = '{TU_API_KEY}';
 
