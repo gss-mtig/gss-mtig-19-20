@@ -1,5 +1,7 @@
 # GSS-mtig-19-20
 
+## Movido a [gss-mtig](https://github.com/gss-mtig/gss-mtig)
+
 [https://gss-mtig.github.io/gss-mtig-19-20/](https://gss-mtig.github.io/gss-mtig-19-20/)
 
 ## Temario
